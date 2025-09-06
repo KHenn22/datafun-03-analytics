@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This project is part of the Northwest Data Analytics Fundamentals course (Week 3). It demonstrates data fetching, processing, and analysis using Python. The project focuses on retrieving various data formats (CSV, Excel, JSON, Text), processing them, and generating summary statistics.
+This project is part of the Northwest Missouri State University Data Analytics Fundamentals course (Week 3). It demonstrates data fetching, processing, and analysis using Python. The project focuses on retrieving various data formats (CSV, Excel, JSON, Text), processing them, and generating summary statistics.
 
 ## Directory Structure
 
@@ -45,9 +45,8 @@ python hennelly_process_csv.py
 - **CSV:** [2020 World Happiness Data](https://raw.githubusercontent.com/MainakRepositor/Datasets/master/World%20Happiness%20Data/2020.csv)
   - Saved as `hennelly_data/2020_happiness.csv`
 
-## Output
+## Logs
 
-- Processed statistics are saved in `hennelly_processed/happiness_ladder_score_stats.txt`.
 - Logs are written to `logs/project_log.log`.
 
 ## Notes
