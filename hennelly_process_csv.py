@@ -69,6 +69,7 @@ def analyze_qb_par(file_path: pathlib.Path, column_hint: str = "PAR/Gm") -> dict
             "min": min(scores),
             "max": max(scores),
             "mean": statistics.mean(scores),
+            "median": statistics.median(scores),
             "stdev": statistics.stdev(scores) if len(scores) > 1 else 0.0,
         }
 
@@ -101,6 +102,7 @@ def process_csv_file():
         file.write(f"Minimum: {stats['min']:.2f}\n")
         file.write(f"Maximum: {stats['max']:.2f}\n")
         file.write(f"Mean: {stats['mean']:.2f}\n")
+        file.write(f"Median: {stats['median']:.2f}\n")
         file.write(f"Standard Deviation: {stats['stdev']:.2f}\n")
 
     # Log the processing of the CSV file
