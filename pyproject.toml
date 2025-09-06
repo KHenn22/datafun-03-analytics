@@ -1,0 +1,23 @@
+[project]
+name = "datafun-03-analytics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10.9"
+dependencies = [
+    "ipykernel>=6.30.1",
+    "ipython>=8.37.0",
+    "ipywidgets>=8.1.7",
+    "jupyter>=1.1.1",
+    "jupyterlab-git>=0.51.2",
+    "loguru>=0.7.3",
+    "matplotlib>=3.10.6",
+    "nbdime>=4.0.2",
+    "pandas>=2.3.2",
+    "pip>=25.2",
+    "pyttsx3>=2.99",
+    "requests>=2.32.5",
+    "seaborn>=0.13.2",
+    "setuptools>=80.9.0",
+    "wheel>=0.45.1",
+]

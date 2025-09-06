@@ -159,7 +159,7 @@ wheel
 loguru
 
 # HTTP requests made simple
-# requests
+requests
 
 # Environment variables management
 # python-dotenv
@@ -202,7 +202,7 @@ jupyterlab-git
 
 # Primary library for Excel (both .xls and .xlsx); handles formulas, charts, formatting (~8 MB)
 # Used by pandas and other libraries.
-# openpyxl
+openpyxl
 
 # For writing advanced Excel files (.xlsx)
 # xlsxwriter
