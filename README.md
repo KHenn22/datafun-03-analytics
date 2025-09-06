@@ -1,2 +1,60 @@
-# datafun-03-analytics
-Northwest Data Analytics Fundamentals Week 3
+
+# DataFun-03-Analytics
+
+## Project Overview
+
+This project is part of the Northwest Data Analytics Fundamentals course (Week 3). It demonstrates data fetching, processing, and analysis using Python. The project focuses on retrieving various data formats (CSV, Excel, JSON, Text), processing them, and generating summary statistics.
+
+## Directory Structure
+
+- `hennelly_get_csv.py` — Fetches CSV data from the web and saves it locally.
+- `hennelly_get_excel.py` — Fetches Excel data from the web and saves it locally.
+- `hennelly_get_json.py` — Fetches JSON data from the web and saves it locally.
+- `hennelly_get_text.py` — Fetches text data from the web and saves it locally.
+- `hennelly_process_csv.py` — Processes the fetched CSV data and outputs summary statistics.
+- `utils_logger.py` — Logging utility used across scripts.
+- `hennelly_data/` — Directory for raw fetched data files.
+- `hennelly_processed/` — Directory for processed output files.
+- `logs/` — Contains log files for script execution.
+
+## Setup
+
+1. Clone this repository.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Ensure you have Python 3.10 or later installed.
+
+## Usage
+
+To fetch all data files (CSV, Excel, JSON, Text):
+
+```bash
+python hennelly_get_csv.py && python hennelly_get_excel.py && python hennelly_get_json.py && python hennelly_get_text.py
+```
+
+To process the CSV data and generate statistics:
+
+```bash
+python hennelly_process_csv.py
+```
+
+## Data Sources
+
+- **CSV:** [2020 World Happiness Data](https://raw.githubusercontent.com/MainakRepositor/Datasets/master/World%20Happiness%20Data/2020.csv)
+  - Saved as `hennelly_data/2020_happiness.csv`
+
+## Output
+
+- Processed statistics are saved in `hennelly_processed/happiness_ladder_score_stats.txt`.
+- Logs are written to `logs/project_log.log`.
+
+## Notes
+
+- Update file paths in scripts if you change directory names.
+- All scripts use a shared logging utility for consistent output.
+
+---
+**Author:** Kevin Hennelly
+**Course:** Data Analytics Fundamentals
