@@ -22,69 +22,87 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-FETCHED_DATA_DIR: str = "hennelly_data"
+FETCHED_DATA_DIR: str = "data"
 PROCESSED_DIR: str = "hennelly_processed"
 
 #####################################
 # Define Functions
 #####################################
 
-# TODO: Add or replace this with a function that reads and processes your CSV file
 
-def analyze_ladder_score(file_path: pathlib.Path) -> dict:
-    """Analyze the Ladder score column to calculate min, max, mean, and stdev."""
+def analyze_qb_par(file_path: pathlib.Path, column_hint: str = "PAR/Gm") -> dict:
+    """Analyze a numeric PAR-like column (e.g., 'PAR/Gm', 'PAR/13') and return stats."""
     try:
-        # initialize an empty list to store the scores
-        score_list = []
-        with file_path.open('r') as file:
-            # csv.DictReader() methods to read into a DictReader so we can access named columns in the csv file
-            dict_reader = csv.DictReader(file)  
-            for row in dict_reader:
+        scores = []
+
+        def norm(s: str) -> str:
+            return ''.join(ch for ch in s.strip().lower() if ch.isalnum())
+
+        with file_path.open('r', newline='', encoding='utf-8-sig') as f:
+            r = csv.DictReader(f)
+            headers = r.fieldnames or []
+            # map normalized header -> original header
+            colmap = {norm(h): h for h in headers}
+            # try to find the column
+            candidates = [norm(column_hint), "par", "qbpar", "pointsabovereplacement"]
+            col = next((colmap[c] for c in candidates if c in colmap), None)
+
+            if not col:
+                logger.error(f"PAR column not found. Available columns: {headers}")
+                return {}
+
+            for row in r:
+                raw = (row.get(col) or "").strip()
+                if raw in ("", "NA", "N/A", "-"):
+                    continue
                 try:
-                    score = float(row["Ladder score"])  # Extract and convert to float
-                    # append the score to the list
-                    score_list.append(score)
-                except ValueError as e:
-                    logger.warning(f"Skipping invalid row: {row} ({e})")
-        
-        # Calculate statistics
-        stats = {
-            "min": min(score_list),
-            "max": max(score_list),
-            "mean": statistics.mean(score_list),
-            "stdev": statistics.stdev(score_list) if len(score_list) > 1 else 0,
+                    scores.append(float(raw))
+                except ValueError:
+                    logger.warning(f"Skipping non-numeric value: {raw!r}")
+                    continue
+
+        if not scores:
+            logger.error("No numeric values found in the PAR column.")
+            return {}
+
+        return {
+            "min": min(scores),
+            "max": max(scores),
+            "mean": statistics.mean(scores),
+            "stdev": statistics.stdev(scores) if len(scores) > 1 else 0.0,
         }
-        return stats
+
     except Exception as e:
         logger.error(f"Error processing CSV file: {e}")
         return {}
 
 def process_csv_file():
-    """Read a CSV file, analyze Ladder score, and save the results."""
-    
-    # TODO: Replace with path to your CSV data file
-    input_file = pathlib.Path(FETCHED_DATA_DIR, "2020_happiness.csv")
-    
-    # TODO: Replace with path to your CSV processed file
-    output_file = pathlib.Path(PROCESSED_DIR, "happiness_ladder_score_stats.txt")
-    
-    # TODO: Call your new function to process YOUR CSV file
-    # TODO: Create a new local variable to store the result of the function call
-    stats = analyze_ladder_score(input_file)
+    """Read a CSV file, analyze QB PAR, and save the results."""
+    input_file = pathlib.Path(FETCHED_DATA_DIR, "historical_QB_PAR_seasons.csv")
+    output_file = pathlib.Path(PROCESSED_DIR, "qb_par_stats.txt")
 
-    # Create the output directory if it doesn't exist
+    # run analysis once
+    stats = analyze_qb_par(input_file)
+
+    # ensure output dir exists
     output_file.parent.mkdir(parents=True, exist_ok=True)
-    
-    # Open the output file in write mode and write the results
-    with output_file.open('w') as file:
 
-        # TODO: Update the output to describe your results
-        file.write("Ladder Score Statistics:\n")
+    # if analysis failed, write note and exit early
+    if not stats:
+        with output_file.open('w') as file:
+            file.write("QB PAR Statistics:\n")
+            file.write("No stats produced. Check column name in the CSV; see logs.\n")
+        logger.error("Stats dict empty; likely wrong column name. See error above.")
+        return
+
+    # write real stats
+    with output_file.open('w') as file:
+        file.write("QB PAR Statistics:\n")
         file.write(f"Minimum: {stats['min']:.2f}\n")
         file.write(f"Maximum: {stats['max']:.2f}\n")
         file.write(f"Mean: {stats['mean']:.2f}\n")
         file.write(f"Standard Deviation: {stats['stdev']:.2f}\n")
-    
+
     # Log the processing of the CSV file
     logger.info(f"Processed CSV file: {input_file}, Statistics saved to: {output_file}")
 

@@ -1,0 +1,5 @@
+QB PAR Statistics:
+Minimum: -11.87
+Maximum: 16.57
+Mean: 1.70
+Standard Deviation: 2.54
