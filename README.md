@@ -42,8 +42,8 @@ python hennelly_process_csv.py
 
 ## Data Sources
 
-- **CSV:** [2020 World Happiness Data](https://raw.githubusercontent.com/MainakRepositor/Datasets/master/World%20Happiness%20Data/2020.csv)
-  - Saved as `hennelly_data/2020_happiness.csv`
+- **CSV:** [College Football PAR Data] https://raw.githubusercontent.com/Neil-Paine-1/College-Football-QB-PAR/main/historical-QB-PAR-seasons.csv
+  - Saved as `data/historical_QB_PAR_seasons.csv`
 
 ## Logs
 
