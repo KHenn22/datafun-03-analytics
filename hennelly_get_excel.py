@@ -93,7 +93,7 @@ def main():
     """
     Main function to demonstrate fetching Excel data.
     """
-    excel_url = 'https://raw.githubusercontent.com/denisecase/datafun-03-analytics/main/hosted/Feedback.xlsx'
+    excel_url = 'https://github.com/Cap110100/College-Football-Analysis/blob/main/All_stats.xlsx'
     logger.info("Starting Excel fetch demonstration...")
     fetch_excel_file(FETCHED_DATA_DIR, "Feedback.xlsx", excel_url)
 
