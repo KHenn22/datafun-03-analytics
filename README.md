@@ -9,10 +9,11 @@ This project is part of the Northwest Missouri State University Data Analytics F
 
 - `hennelly_get_csv.py` — Fetches CSV data of college football statistics from the web and saves it locally.
 - `hennelly_get_excel.py` — Fetches Excel data of college football statistics from the web and saves it locally.
-- `hennelly_get_json.py` — Fetches JSON data from the web and saves it locally.
+- `hennelly_get_json.py` — Fetches JSON data on soccer (football) matches from the web and saves it locally.
 - `hennelly_get_text.py` — Fetches text data from the web and saves it locally.
 - `hennelly_process_csv.py` — Processes the fetched CSV data and outputs QB PAR per game overall statistics.
-- `hennelly_process_excel.py` - Processes the fetched CSV data and counts the number of occurrences of Cory Schrader.
+- `hennelly_process_excel.py` - Processes the fetched Excel data and counts the number of occurrences of Cory Schrader.
+- `hennelly_process_json.py` - Processes the fetched JSON data and counts the number of seasons per competition.
 - `utils_logger.py` — Logging utility used across scripts.
 - `hennelly_data/` — Directory for raw fetched data files.
 - `hennelly_processed/` — Directory for processed output files.
