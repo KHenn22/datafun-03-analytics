@@ -7,8 +7,8 @@ This project is part of the Northwest Missouri State University Data Analytics F
 
 ## Directory Structure
 
-- `hennelly_get_csv.py` — Fetches CSV data of college football statistics and saves it locally.
-- `hennelly_get_excel.py` — Fetches Excel data of college football statistics and saves it locally.
+- `hennelly_get_csv.py` — Fetches CSV data of college football statistics from the web and saves it locally.
+- `hennelly_get_excel.py` — Fetches Excel data of college football statistics from the web and saves it locally.
 - `hennelly_get_json.py` — Fetches JSON data from the web and saves it locally.
 - `hennelly_get_text.py` — Fetches text data from the web and saves it locally.
 - `hennelly_process_csv.py` — Processes the fetched CSV data and outputs QB PAR per game overall statistics.
