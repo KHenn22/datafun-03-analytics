@@ -20,9 +20,8 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-# TODO: Replace with the names of your folders
-FETCHED_DATA_DIR: str = "example_data"
-PROCESSED_DIR: str = "example_processed"
+FETCHED_DATA_DIR: str = "data"
+PROCESSED_DIR: str = "hennelly_processed"
 
 #####################################
 # Define Functions
@@ -39,18 +38,14 @@ def count_word_occurrences(file_path: pathlib.Path, word: str) -> int:
         return 1
 
 def process_text_file():
-    """Read a text file, count occurrences of 'Romeo', and save the result."""
+    """Read a text file, count occurrences of 'Ahab', and save the result."""
  
-    # TODO: Replace with path to your text data file
-    input_file = pathlib.Path(FETCHED_DATA_DIR, "romeo.txt")
+    input_file = pathlib.Path(FETCHED_DATA_DIR, "ahab.txt")
 
-    # TODO: Replace with path to your text processed file
-    output_file = pathlib.Path(PROCESSED_DIR, "text_romeo_word_count.txt")
+    output_file = pathlib.Path(PROCESSED_DIR, "text_ahab_word_count.txt")
 
-    # TODO: Replace with the word you want to count from your text file
-    word_to_count: str = "Romeo"
+    word_to_count: str = "Ahab"
 
-    # TODO: Make any necessary changes to the logic
     word_count: int = count_word_occurrences(input_file, word_to_count)
 
     # Create the output directory if it doesn't exist
@@ -58,7 +53,6 @@ def process_text_file():
 
     # Write the results to the output file
     with output_file.open('w') as file:
-        # TODO: Update the output to describe your results
         file.write(f"Occurrences of '{word_to_count}': {word_count}\n")
     
     # Log the processing of the TEXT file
