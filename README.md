@@ -7,11 +7,12 @@ This project is part of the Northwest Missouri State University Data Analytics F
 
 ## Directory Structure
 
-- `hennelly_get_csv.py` — Fetches CSV data from the web and saves it locally.
-- `hennelly_get_excel.py` — Fetches Excel data from the web and saves it locally.
+- `hennelly_get_csv.py` — Fetches CSV data of college football statistics and saves it locally.
+- `hennelly_get_excel.py` — Fetches Excel data of college football statistics and saves it locally.
 - `hennelly_get_json.py` — Fetches JSON data from the web and saves it locally.
 - `hennelly_get_text.py` — Fetches text data from the web and saves it locally.
-- `hennelly_process_csv.py` — Processes the fetched CSV data and outputs summary statistics.
+- `hennelly_process_csv.py` — Processes the fetched CSV data and outputs QB PAR per game overall statistics.
+- `hennelly_process_excel.py` - Processes the fetched CSV data and counts the number of occurrences of Cory Schrader.
 - `utils_logger.py` — Logging utility used across scripts.
 - `hennelly_data/` — Directory for raw fetched data files.
 - `hennelly_processed/` — Directory for processed output files.
