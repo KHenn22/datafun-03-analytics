@@ -32,6 +32,21 @@ This project is part of the Northwest Missouri State University Data Analytics F
 
 ## Usage
 
+
+### Recommended: Use the All-in-One Script
+
+You can now use `hennelly_project3.py` to fetch and process all data files from a single menu-driven program:
+
+```bash
+python hennelly_project3.py
+```
+
+Follow the on-screen prompts to fetch, process, or do both for all data types.
+
+---
+
+### (Advanced) Run Individual Scripts
+
 To fetch all data files (CSV, Excel, JSON, Text):
 
 ```bash
@@ -46,11 +61,12 @@ python hennelly_process_csv.py && python hennelly_process_excel.py && python hen
 
 ## Data Sources
 
+
 - **CSV:** [College Football PAR Data](https://raw.githubusercontent.com/Neil-Paine-1/College-Football-QB-PAR/main/historical-QB-PAR-seasons.csv)
   - Saved as `data/historical_QB_PAR_seasons.csv`
-- **Excel:** [NCAA Data] (https://raw.githubusercontent.com/Cap110100/College-Football-Analysis/main/All_stats.xlsx)
-- **JSON:** [Soccer Data] (https://raw.githubusercontent.com/statsbomb/open-data/refs/heads/master/data/competitions.json)
-- **Text:** [Moby Dick] (https://www.gutenberg.org/cache/epub/2701/pg2701.txt)
+- **Excel:** [NCAA Data](https://raw.githubusercontent.com/Cap110100/College-Football-Analysis/main/All_stats.xlsx)
+- **JSON:** [Soccer Data](https://raw.githubusercontent.com/statsbomb/open-data/refs/heads/master/data/competitions.json)
+- **Text:** [Moby Dick](https://www.gutenberg.org/cache/epub/2701/pg2701.txt)
 
 ## Output
 
