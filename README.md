@@ -63,7 +63,6 @@ python hennelly_process_csv.py && python hennelly_process_excel.py && python hen
 
 
 - **CSV:** [College Football PAR Data](https://raw.githubusercontent.com/Neil-Paine-1/College-Football-QB-PAR/main/historical-QB-PAR-seasons.csv)
-  - Saved as `data/historical_QB_PAR_seasons.csv`
 - **Excel:** [NCAA Data](https://raw.githubusercontent.com/Cap110100/College-Football-Analysis/main/All_stats.xlsx)
 - **JSON:** [Soccer Data](https://raw.githubusercontent.com/statsbomb/open-data/refs/heads/master/data/competitions.json)
 - **Text:** [Moby Dick](https://www.gutenberg.org/cache/epub/2701/pg2701.txt)
