@@ -17,7 +17,7 @@ This project is part of the Northwest Missouri State University Data Analytics F
 - `hennelly_process_json.py` — Processes the fetched JSON data and counts the number of seasons per competition.
 - `hennelly_process_text.py` — Processes the fetched text data and counts the number of occurrences of "Ahab".
 - `utils_logger.py` — Logging utility used across scripts.
-- `hennelly_data/` — Directory for raw fetched data files.
+- `data/` — Directory for raw fetched data files.
 - `hennelly_processed/` — Directory for processed output files.
 - `logs/` — Contains log files for script execution.
 

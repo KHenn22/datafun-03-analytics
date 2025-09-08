@@ -225,3 +225,22 @@
 2025-09-07 16:15:15.570 | INFO     | __main__:process_excel_file:118 - Processed Excel file: data/all_NCAA_data.xlsx, Word count saved to: hennelly_processed/cody_schrader.txt
 2025-09-07 16:15:15.570 | INFO     | __main__:process_json_file:137 - Processed JSON file: data/matches.json, Results saved to: hennelly_processed/json_seasons_per_competition.txt
 2025-09-07 16:15:15.586 | INFO     | __main__:process_text_file:152 - Processed text file: data/ahab.txt, Word count saved to: hennelly_processed/text_ahab_word_count.txt
+2025-09-07 17:12:56.777 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 17:12:59.608 | ERROR    | __main__:analyze_qb_par:101 - Error processing CSV: [Errno 2] No such file or directory: 'data/historical_QB_PAR_seasons.csv'
+2025-09-07 17:12:59.608 | ERROR    | __main__:process_excel_file:120 - Error processing Excel: [Errno 2] No such file or directory: 'data/all_NCAA_data.xlsx'
+2025-09-07 17:12:59.608 | ERROR    | __main__:process_json_file:139 - Error processing JSON: [Errno 2] No such file or directory: 'data/matches.json'
+2025-09-07 17:12:59.608 | ERROR    | __main__:process_text_file:154 - Error processing text: [Errno 2] No such file or directory: 'data/ahab.txt'
+2025-09-07 17:13:35.274 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 17:13:38.137 | INFO     | __main__:fetch_csv_file:25 - Fetching CSV from https://raw.githubusercontent.com/Neil-Paine-1/College-Football-QB-PAR/main/historical-QB-PAR-seasons.csv
+2025-09-07 17:13:47.695 | INFO     | __main__:fetch_csv_file:31 - Saved CSV to data/historical_QB_PAR_seasons.csv
+2025-09-07 17:13:47.698 | INFO     | __main__:fetch_excel_file:37 - Fetching Excel from https://raw.githubusercontent.com/Cap110100/College-Football-Analysis/main/All_stats.xlsx
+2025-09-07 17:13:48.417 | INFO     | __main__:fetch_excel_file:43 - Saved Excel to data/all_NCAA_data.xlsx
+2025-09-07 17:13:48.419 | INFO     | __main__:fetch_json_file:49 - Fetching JSON from https://raw.githubusercontent.com/statsbomb/open-data/refs/heads/master/data/competitions.json
+2025-09-07 17:13:48.589 | INFO     | __main__:fetch_json_file:55 - Saved JSON to data/matches.json
+2025-09-07 17:13:48.591 | INFO     | __main__:fetch_txt_file:61 - Fetching text from https://www.gutenberg.org/cache/epub/2701/pg2701.txt
+2025-09-07 17:13:49.803 | INFO     | __main__:fetch_txt_file:67 - Saved text to data/ahab.txt
+2025-09-07 17:14:58.907 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 17:15:01.918 | INFO     | __main__:analyze_qb_par:99 - Processed CSV file: data/historical_QB_PAR_seasons.csv, Statistics saved to: hennelly_processed/qb_par_stats.txt
+2025-09-07 17:15:09.931 | INFO     | __main__:process_excel_file:118 - Processed Excel file: data/all_NCAA_data.xlsx, Word count saved to: hennelly_processed/cody_schrader.txt
+2025-09-07 17:15:09.931 | INFO     | __main__:process_json_file:137 - Processed JSON file: data/matches.json, Results saved to: hennelly_processed/json_seasons_per_competition.txt
+2025-09-07 17:15:09.947 | INFO     | __main__:process_text_file:152 - Processed text file: data/ahab.txt, Word count saved to: hennelly_processed/text_ahab_word_count.txt
