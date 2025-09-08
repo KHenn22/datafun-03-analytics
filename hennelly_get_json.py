@@ -96,14 +96,6 @@ def main():
     logger.info("Starting JSON fetch demonstration...")
     fetch_json_file(FETCHED_DATA_DIR, "matches.json", json_url)
 
-##############################################################
-# Load a local JSON file into a Python object (dict/list)
-##############################################################
-
-def get_json_data(path: str):
-    text = Path(path).read_text(encoding="utf-8")
-    return json.loads(text)
-
 #####################################
 # Conditional Execution
 #####################################

@@ -199,3 +199,29 @@
 2025-09-07 15:20:57.242 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
 2025-09-07 15:41:00.909 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
 2025-09-07 15:46:35.700 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 16:09:51.197 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 16:10:05.523 | INFO     | __main__:fetch_csv_file:25 - Fetching CSV from https://raw.githubusercontent.com/Neil-Paine-1/College-Football-QB-PAR/main/historical-QB-PAR-seasons.csv
+2025-09-07 16:10:15.803 | INFO     | __main__:fetch_csv_file:31 - Saved CSV to data/historical_QB_PAR_seasons.csv
+2025-09-07 16:10:15.807 | INFO     | __main__:fetch_excel_file:37 - Fetching Excel from https://raw.githubusercontent.com/Cap110100/College-Football-Analysis/main/All_stats.xlsx
+2025-09-07 16:10:16.414 | INFO     | __main__:fetch_excel_file:43 - Saved Excel to data/all_NCAA_data.xlsx
+2025-09-07 16:10:16.419 | INFO     | __main__:fetch_json_file:49 - Fetching JSON from https://raw.githubusercontent.com/statsbomb/open-data/refs/heads/master/data/competitions.json
+2025-09-07 16:10:16.812 | INFO     | __main__:fetch_json_file:55 - Saved JSON to data/matches.json
+2025-09-07 16:10:16.815 | INFO     | __main__:fetch_txt_file:61 - Fetching text from https://www.gutenberg.org/cache/epub/2701/pg2701.txt
+2025-09-07 16:10:17.981 | INFO     | __main__:fetch_txt_file:67 - Saved text to data/ahab.txt
+2025-09-07 16:10:18.152 | INFO     | __main__:analyze_qb_par:93 - Processed CSV file: data/historical_QB_PAR_seasons.csv, Statistics saved to: hennelly_processed/qb_par_stats.txt
+2025-09-07 16:10:25.965 | INFO     | __main__:process_excel_file:112 - Processed Excel file: data/all_NCAA_data.xlsx, Word count saved to: hennelly_processed/cody_schrader.txt
+2025-09-07 16:10:25.966 | INFO     | __main__:process_json_file:131 - Processed JSON file: data/matches.json, Results saved to: hennelly_processed/json_seasons_per_competition.txt
+2025-09-07 16:10:25.980 | INFO     | __main__:process_text_file:146 - Processed text file: data/ahab.txt, Word count saved to: hennelly_processed/text_ahab_word_count.txt
+2025-09-07 16:14:52.254 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 16:14:56.089 | INFO     | __main__:fetch_csv_file:25 - Fetching CSV from https://raw.githubusercontent.com/Neil-Paine-1/College-Football-QB-PAR/main/historical-QB-PAR-seasons.csv
+2025-09-07 16:15:05.526 | INFO     | __main__:fetch_csv_file:31 - Saved CSV to data/historical_QB_PAR_seasons.csv
+2025-09-07 16:15:05.530 | INFO     | __main__:fetch_excel_file:37 - Fetching Excel from https://raw.githubusercontent.com/Cap110100/College-Football-Analysis/main/All_stats.xlsx
+2025-09-07 16:15:06.368 | INFO     | __main__:fetch_excel_file:43 - Saved Excel to data/all_NCAA_data.xlsx
+2025-09-07 16:15:06.372 | INFO     | __main__:fetch_json_file:49 - Fetching JSON from https://raw.githubusercontent.com/statsbomb/open-data/refs/heads/master/data/competitions.json
+2025-09-07 16:15:06.411 | INFO     | __main__:fetch_json_file:55 - Saved JSON to data/matches.json
+2025-09-07 16:15:06.413 | INFO     | __main__:fetch_txt_file:61 - Fetching text from https://www.gutenberg.org/cache/epub/2701/pg2701.txt
+2025-09-07 16:15:07.680 | INFO     | __main__:fetch_txt_file:67 - Saved text to data/ahab.txt
+2025-09-07 16:15:07.866 | INFO     | __main__:analyze_qb_par:99 - Processed CSV file: data/historical_QB_PAR_seasons.csv, Statistics saved to: hennelly_processed/qb_par_stats.txt
+2025-09-07 16:15:15.570 | INFO     | __main__:process_excel_file:118 - Processed Excel file: data/all_NCAA_data.xlsx, Word count saved to: hennelly_processed/cody_schrader.txt
+2025-09-07 16:15:15.570 | INFO     | __main__:process_json_file:137 - Processed JSON file: data/matches.json, Results saved to: hennelly_processed/json_seasons_per_competition.txt
+2025-09-07 16:15:15.586 | INFO     | __main__:process_text_file:152 - Processed text file: data/ahab.txt, Word count saved to: hennelly_processed/text_ahab_word_count.txt

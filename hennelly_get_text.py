@@ -98,14 +98,6 @@ def main():
     logger.info("Starting text fetch demonstration...")
     fetch_txt_file(FETCHED_DATA_DIR, "ahab.txt", txt_url)
 
-######################################################
-# Load a local plain text file into a string
-######################################################
-
-def get_text_data(path: str):
-    """Load a local plain text file into a string."""
-    return Path(path).read_text(encoding="utf-8")
-
 #####################################
 # Conditional Execution
 #####################################

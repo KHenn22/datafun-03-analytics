@@ -58,16 +58,6 @@ def process_text_file():
     # Log the processing of the TEXT file
     logger.info(f"Processed text file: {input_file}, Word count saved to: {output_file}")
 
-#####################################################################
-# Process and display some info about the text file
-#####################################################################
-
-def process_text_data(text):
-    """Process and display some info about the text file."""
-    print("Text Data preview:")
-    print(text[:200])   # first 200 characters
-    print(f"Length: {len(text)} characters")
-    
 #####################################
 # Main Execution
 #####################################

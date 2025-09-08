@@ -98,13 +98,6 @@ def main():
     logger.info("Starting Excel fetch demonstration...")
     fetch_excel_file(FETCHED_DATA_DIR, "all_NCAA_data.xlsx", excel_url)
 
-################################################################
-# Load a local Excel file into a pandas DataFrame.
-#################################################################
-
-def get_excel_data(path: str):
-    return pd.read_excel(path)
-
 #####################################
 # Conditional Execution
 #####################################

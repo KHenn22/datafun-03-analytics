@@ -99,13 +99,6 @@ def main():
     fetch_csv_file(FETCHED_DATA_DIR, "historical_QB_PAR_seasons.csv", csv_url)
 
 #####################################
-# Load a local CSV file into a pandas DataFrame
-#####################################
-
-def get_csv_data(path: str):
-    return pd.read_csv(path)
-
-#####################################
 # Conditional Execution
 #####################################
 
