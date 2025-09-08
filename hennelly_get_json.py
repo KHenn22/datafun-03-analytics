@@ -1,6 +1,6 @@
 """
-This example file fetches JSON data of astronauts currently in space 
-from the web and saves it to a local file named example_data/astronauts.json.
+This example file fetches JSON data of selected soccer matches  
+from the web and saves it to a local file named data/matches.json.
 """
 
 #####################################

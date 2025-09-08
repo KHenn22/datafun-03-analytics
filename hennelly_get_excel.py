@@ -1,6 +1,6 @@
 """
 This example file fetches an Excel file from the web 
-and saves it to a local file named feedback.xlsx in a folder named example_data.
+and saves it to a local file named all_NCAA_data.xlsx in a folder named data.
 
 Please save a copy of the provided utils_logger.py file 
 in the same folder as this file.

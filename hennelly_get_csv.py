@@ -1,6 +1,6 @@
 """
 This example file fetches a CSV file from the web 
-and saves it to a local file named 2020_happiness.csv in a folder named example_data.
+and saves it to a local file named historical_QB_PAR_seasons.csv in a folder named data.
 
 For best results, add the provided utils_logger.py file 
 to the same folder as this file.
