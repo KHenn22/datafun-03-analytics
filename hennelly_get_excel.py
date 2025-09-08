@@ -13,6 +13,7 @@ in the same folder as this file.
 # Import from Python Standard Library
 import pathlib
 import sys
+import pandas as pd
 
 # Import from external packages
 import requests
@@ -96,6 +97,13 @@ def main():
     excel_url = 'https://raw.githubusercontent.com/Cap110100/College-Football-Analysis/main/All_stats.xlsx'
     logger.info("Starting Excel fetch demonstration...")
     fetch_excel_file(FETCHED_DATA_DIR, "all_NCAA_data.xlsx", excel_url)
+
+################################################################
+# Load a local Excel file into a pandas DataFrame.
+#################################################################
+
+def get_excel_data(path: str):
+    return pd.read_excel(path)
 
 #####################################
 # Conditional Execution

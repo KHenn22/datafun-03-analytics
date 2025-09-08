@@ -20,6 +20,7 @@ sys.path.append(str(pathlib.Path(__file__).resolve().parent))
 
 # Import local modules
 from utils_logger import logger
+from pathlib import Path 
 
 #####################################
 # Declare Global Variables
@@ -94,6 +95,14 @@ def main():
     json_url = 'https://raw.githubusercontent.com/statsbomb/open-data/refs/heads/master/data/competitions.json'
     logger.info("Starting JSON fetch demonstration...")
     fetch_json_file(FETCHED_DATA_DIR, "matches.json", json_url)
+
+##############################################################
+# Load a local JSON file into a Python object (dict/list)
+##############################################################
+
+def get_json_data(path: str):
+    text = Path(path).read_text(encoding="utf-8")
+    return json.loads(text)
 
 #####################################
 # Conditional Execution

@@ -1,5 +1,5 @@
 """
-Process a CSV file on 2020 Happiness ratings by country to analyze the `Ladder score` column and save statistics.
+Process a CSV file on college quarterback data about PAR per game and save statistics.
 """
 
 #####################################
@@ -107,6 +107,15 @@ def process_csv_file():
 
     # Log the processing of the CSV file
     logger.info(f"Processed CSV file: {input_file}, Statistics saved to: {output_file}")
+
+#############################################################
+# Process and display some info about the CSV DataFrame
+#############################################################
+
+def process_csv_data(df):
+    print("CSV Data preview:")
+    print(df.head())      # shows first 5 rows
+    print(f"Shape: {df.shape}")  # shows (rows, columns)
 
 #####################################
 # Main Execution

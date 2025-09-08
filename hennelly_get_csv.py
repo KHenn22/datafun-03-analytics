@@ -13,6 +13,7 @@ to the same folder as this file.
 # Import from Python Standard Library
 import pathlib
 import sys
+import pandas as pd
 
 # Import from external packages
 import requests
@@ -96,6 +97,13 @@ def main():
     csv_url = csv_url = "https://raw.githubusercontent.com/Neil-Paine-1/College-Football-QB-PAR/main/historical-QB-PAR-seasons.csv"
     logger.info("Starting CSV fetch demonstration...")
     fetch_csv_file(FETCHED_DATA_DIR, "historical_QB_PAR_seasons.csv", csv_url)
+
+#####################################
+# Load a local CSV file into a pandas DataFrame
+#####################################
+
+def get_csv_data(path: str):
+    return pd.read_csv(path)
 
 #####################################
 # Conditional Execution

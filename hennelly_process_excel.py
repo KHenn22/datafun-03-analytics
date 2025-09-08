@@ -69,6 +69,16 @@ def process_excel_file():
     # Log the processing of the Excel file    
     logger.info(f"Processed Excel file: {input_file}, Word count saved to: {output_file}")
 
+###########################################################################
+# Process and display some info about the Excel DataFrame
+###########################################################################
+
+def process_excel_data(df):
+    """Process and display some info about the Excel DataFrame."""
+    print("Excel Data preview:")
+    print(df.head())
+    print(f"Shape: {df.shape}")
+    
 #####################################
 # Main Execution
 #####################################

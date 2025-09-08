@@ -22,6 +22,7 @@ sys.path.append(str(pathlib.Path(__file__).resolve().parent))
 
 # Import local modules
 from utils_logger import logger
+from pathlib import Path 
 
 #####################################
 # Declare Global Variables
@@ -96,6 +97,14 @@ def main():
     txt_url = 'https://www.gutenberg.org/cache/epub/2701/pg2701.txt'
     logger.info("Starting text fetch demonstration...")
     fetch_txt_file(FETCHED_DATA_DIR, "ahab.txt", txt_url)
+
+######################################################
+# Load a local plain text file into a string
+######################################################
+
+def get_text_data(path: str):
+    """Load a local plain text file into a string."""
+    return Path(path).read_text(encoding="utf-8")
 
 #####################################
 # Conditional Execution

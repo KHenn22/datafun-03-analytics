@@ -192,3 +192,10 @@
 2025-09-07 11:18:08.361 | INFO     | __main__:<module>:66 - Starting text processing...
 2025-09-07 11:18:08.378 | INFO     | __main__:process_text_file:59 - Processed text file: data/ahab.txt, Word count saved to: hennelly_processed/text_ahab_word_count.txt
 2025-09-07 11:18:08.378 | INFO     | __main__:<module>:68 - Text processing complete.
+2025-09-07 15:06:04.398 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 15:06:04.398 | INFO     | __main__:<module>:77 - Starting Excel processing...
+2025-09-07 15:06:12.229 | INFO     | __main__:process_excel_file:70 - Processed Excel file: data/all_NCAA_data.xlsx, Word count saved to: hennelly_processed/cody_schrader.txt
+2025-09-07 15:06:12.230 | INFO     | __main__:<module>:79 - Excel processing complete.
+2025-09-07 15:20:57.242 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 15:41:00.909 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log
+2025-09-07 15:46:35.700 | INFO     | utils_logger:<module>:41 - Logging to file: logs/project_log.log

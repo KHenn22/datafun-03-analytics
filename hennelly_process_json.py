@@ -84,6 +84,18 @@ def process_json_file() -> None:
     # Log the processing of the JSON file
     logger.info(f"Processed JSON file: {input_file}, Results saved to: {output_file}")
 
+###############################################################
+# Process and display some info about the JSON object
+###############################################################
+
+def process_json_data(obj):
+    print("JSON Data preview:")
+    if isinstance(obj, dict):
+        print("Top-level keys:", list(obj.keys())[:5])
+    elif isinstance(obj, list):
+        print("First element:", obj[0])
+    print(f"Type: {type(obj)}")
+    
 #####################################
 # Main Execution
 #####################################
